@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy.com</title>
+    <script src="https://kit.fontawesome.com/2f9fe43004.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #screen{
+            width: 100%;
+        }
+    
+        #screen div:nth-child(1) {
+            height: 35px;
+            position: relative;
+        }
+        /* #navbar{
+            ;
+        } */
+    
+        #navbar > div {
+            position: absolute;
+            top: 27%;
+            /* margin-left: 23%; */
+        }
+    
+        #navbar div:nth-child(1){
+            margin-left: 10px;
+        }
+    
+        #navbar div:nth-child(2){
+            margin-left: 90px;
+        }
+    
+        #navbar div:nth-child(2) > h5{
+            margin-top: 7px;
+            font-size: 10px;
+            font-weight: 100;
+            /* margin-left: 50px; */
+        }
+    
+        #navbar div:nth-child(3){
+            margin-left: 150px;
+            font-size: 13px;
+            border: 1px solid black;
+            border-radius: 15px;
+            height: 30px;
+            width: 480px;
+            margin-top: -2px;
+            
+        }
+    
+        #navbar div:nth-child(3) > i {
+            margin-left: 10px;
+            margin-top: 9px;
+            
+        }
+    
+        #navbar div:nth-child(3) > input {
+            border: none;
+            outline: none;
+            width: 400px;
+            font-size: 10px;
+            margin-left: 10px;
+            
+        }
+       
+         #navbar div:nth-child(4){
+            margin-left: 650px;
+        } 
+    
+         #navbar div:nth-child(4) > h5 {
+            margin-top: 7px;
+            font-size: 10px;
+            font-weight: 100;
+            
+        }
+     
+        #navbar div:nth-child(5){
+            margin-left: 735px;
+        }
+    
+        #navbar div:nth-child(5) > h5{
+            margin-top: 7px;
+            font-size: 10px;
+            font-weight: 100;
+            
+        }
+    
+        #navbar div:nth-child(6){
+            margin-left: 820px;
+        }
+    
+        #navbar div:nth-child(6) > i{
+            margin-top: 12px;
+            
+    
+        }
+    
+        #navbar div:nth-child(7){
+            margin-left: 850px;
+        }
+    
+        #navbar div:nth-child(7) > button {
+            width: 55px;
+            height: 28px;
+            font-size: 10px;
+            font-weight: 600;
+            background-color: white;
+        }
+    
+        #navbar div:nth-child(8) {
+            margin-left: 910px;
+        }
+    
+        #navbar div:nth-child(8) > button {
+            width: 55px;
+            height: 28px;
+            font-size: 10px;
+            font-weight: 600;
+            background-color:black;
+            color: white;
+        }
+    
+        #navbar div:nth-child(9){
+            margin-left: 970px;
+        }
+    
+        #navbar div:nth-child(9) > button {
+            width: 28px;
+            height: 28px;
+            background-color: white;
+        }
+
+        .topbar{
+        width: 50%;
+        }
+            /* -------------------------------- */
+        #form{
+            width: 100%;
+            /* border: 1px solid black; */
+        }
+        #layout{
+            width: 25%;
+            margin: auto;
+        }
+        #layout div:nth-child(1){
+            margin-top: 50px;
+            margin-bottom: 7px;
+        }
+        #layout div:nth-child(1) h4 {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        #layout div button{
+            width: 100%;
+            border: 1px solid black;
+            height: 35px;
+            background-color: white;
+            text-align: left;
+            margin-bottom: 8px;
+        }
+        #layout div button span{
+            font-weight: 700;
+            margin-left: 10px;
+        }
+        #layout div input{
+            width: 98%;
+            border: 1px solid black;
+            font-weight: 700;
+            height: 45px;
+            font-size: 12px;
+            margin-bottom: 12px;
+        
+        }
+        #layout div:nth-child(7) button{
+            background-color: #a435f0;
+            color: white;
+            text-align: center;
+            font-weight: 700;
+            border: none;
+        }
+        #layout div:nth-child(8){
+            text-align: center;
+            margin-top: 5px;
+        }
+        #layout div:nth-child(9){
+            text-align: center;
+            font-size: 14px;
+            font-weight: 100;
+            margin-top: 5px;
+        }
+        #layout div:nth-child(10){
+            text-align: center;
+            font-size: 14px;
+            font-weight: 100;
+            margin-top: 2px;
+        }
+        #layout div h4 a {
+            color: #5624d0;
+        }
+
+
+    
+    </style>
+    </head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <img src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg" alt="Udemy" style="height: 22px; width: 75px;" />
+            </div>
+            <div>
+                <h5>Categories</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input placeholder="Search for Anything.."/>
+
+            </div>
+            <div>
+                <h5>Udemy Business</h5>
+            </div>
+            <div>
+                <h5>Teach on Udemy</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping fa-sm" ></i>
+            </div>
+            <div>
+                <button>Login</button>
+            </div>
+            <div>
+                <button>Sign in</button>
+            </div>
+            <div>
+                <button>
+                    <i class="fa-solid fa-globe"></i>
+                </button>
+            </div>
+            </div>
+            
+    </div>
+
+    <div id="form">
+        <div id="layout">
+            <div>
+                <h4>Log in to your Udemy account</h4>
+            </div>
+            <div>
+                <button>
+                    <i class="fa-brands fa-google fa-2xl"></i>
+                    <span>Continue with google</span>
+                </button>
+            </div>
+            <div>
+                <button>
+                    <i class="fa-brands fa-facebook fa-2xl " ></i>
+                    <span> Continue with Facebook</span>
+                </button>
+            </div>
+            <div>
+                <button>
+                    <i class="fa-brands fa-apple fa-2xl"></i>
+                    <span>Continue with Apple</span>
+                </button>
+            </div>
+            <div>
+                <input placeholder=" Email" type="text" />
+            </div>
+            <div>
+                <input placeholder=" Password" type="password" />
+            </div>
+            <div>
+                <button>Log in</button>
+            </div>
+            <div>
+                <h4>
+                    Or <a href="https://www.udemy.com/user/forgot-password/">Forget Password</a>
+                </h4>
+            </div>
+            <div>
+                <h4> Don't have an account? <a href="https://www.udemy.com/join/signup-popup/">Sign up</a></h4>
+            </div>
+            <div>
+                <h4><a href="https://www.udemy.com/organization/global-login/email">Log in with your organization</a></h4>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

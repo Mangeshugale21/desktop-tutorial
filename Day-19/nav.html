@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>navbar</title>
+<script src="https://kit.fontawesome.com/2f9fe43004.js" crossorigin="anonymous"></script>
+</head>
+<style>
+   *{
+    margin: 0%;
+    padding:0%
+}
+#navbar{
+    display: flex;
+    height: 55px;
+    background-color:rgb(234, 209, 209);
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+#navbar>div:nth-child(1){
+    display:flex;
+    width:150px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#navbar>div:nth-child(1)>img{
+    height: 35px;
+    margin-bottom: 2px;
+} 
+#navbar>div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    color:rgb(162, 155, 155);
+    width: 450px;
+    font-size: 19px;
+    margin-left: 250px;
+    font-family: monospace;
+}
+#navbar>div:nth-child(2)>:hover{
+    color: white;
+}
+#navbar div:nth-child(4)>div>button{
+    color: brown;
+    display: flex;
+    justify-content: space-between;
+     width: 200px;
+    height: 55px;
+}
+
+
+#navbar>div:nth-child(3)>button{
+    margin-top: 12px;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    color: rgb(158, 148, 148);
+    /* background-color: black; */
+    border-radius: 5px;
+    font-weight: 200;
+
+}
+#navbar>div:nth-child(3)>button:hover{
+    background-color: rgb(159, 142, 142);
+
+}
+ #navbar>div:nth-child(3)>div>button{
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+    color: rgb(158, 148, 148);
+    background-color: black; 
+     border-radius: 5px;
+    font-weight:600; 
+
+}
+/* #navbar div:nth-child(4){
+    margin-left: 2px;
+    width: 25px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+#navbar div:nth-child(4)>button{
+    width: 90px;
+    height: 38px;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    font-weight: 600;
+    border:2px solid white;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+#navbar div:nth-child(4)>button:hover{
+    background-color: rgb(159, 142, 142);
+} */
+/* #navbar div:nth-child(5){
+    color: rgb(10, 10, 10);
+   }
+#navbar div:nth-child(5){
+    width: 40px;
+    margin-left: 100px;
+    margin-top: 10px;
+    border-radius: 140%;
+    margin-bottom: 9px;
+}
+#navbar div:nth-child(5)>i{
+    color: white;
+    font-size: 250px;
+
+} */
+
+</style>
+<body>
+    <div id="navbar">
+                <div>
+                    <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png " alt="logo"/>
+                </div>
+                    <div>
+                        <h2> FITNESS</h2>
+                        <h2>CARE</h2>
+                        <h2>MIND</h2>
+                        <h2>STORE</h2>
+                    </div>
+                <div>
+                    <button>
+                    <span>MUMBAI</span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    </button>
+                    <button>GET APP</button>
+                    <i class="fa-solid fa-cart-shopping fa-xl"></i> 
+                    <i class="fa-solid fa-user fa-xl"></i>
+                </div>
+    </div>   
+</body>
+</html>
