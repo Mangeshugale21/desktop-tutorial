@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2f9fe43004.js" crossorigin="anonymous"></script>
+    <script src="./cart.html"></script>
+    <title>Home Page</title>
+    <script>
+        function logout(){
+            alert("logout working");
+            // console.log(localStorage.getItem("userData"))
+            localStorage.removeItem(userData);
+            alert("logout succed !");
+        }
+    </script>
+    <style>
+    #navbar{
+    margin-top: -12px;
+    margin-left: -8px;
+    display: flex;
+    height: 70px;
+    background-color:rgb(232, 159, 159);
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+#navbar>div:nth-child(1){
+    display:flex;
+    width:90px;
+    /* margin-left: 0px; */
+    margin-top: 15px;
+}
+#navbar>div:nth-child(1)>img{
+    height: 35px;
+    margin-top: 10px;
+} 
+#navbar>div:nth-child(2){
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    color:rgb(14, 12, 12);
+    width: 1200px;
+    font-size: 12px;
+    margin-left: 15px;
+    font-family: monospace;
+    /* font-weight: 700; */
+}
+#navbar>div:nth-child(2)>:hover{
+    color: white;
+
+}
+#navbar>div:nth-child(2)>input{
+    height: 24px;
+    margin-top: 14px;
+    width: 200px;
+    border-radius: 8px;
+    border:transparent;
+}
+
+#navbar>div:nth-child(2)>button{
+background-color: white;
+border: none;
+height: 25px;
+margin-top: 15px;
+width: 95px;
+border-radius: 5px;
+font-weight: 700;
+font-size: 16px;
+}
+#navbar>div:nth-child(3){
+    width: 140px;
+    /* height: 40px; */
+    margin-right: 20px;
+    margin-top: 45px;
+    color:black ;
+    display: flex;
+    justify-content: space-between;
+}
+/* ----------------------------Navbar End---------- */
+#homeScreen>div>img{
+    height: 400px;
+    width: 100%;
+    margin-top: 58px;
+    margin-left: -8px;
+}
+#homeScreen>div>img:nth-child(2){
+    width: 100%;
+    margin-top: 1px;
+    margin-left: -8px;
+}
+#homeScreen>div>img:nth-child(3){
+    width: 100%;
+    margin-top: 1px;
+    height: 600px;
+    margin-left: -8px;
+}
+    </style>
+</head>
+<body>
+    <div id="navbar">      
+        <div>
+            <img src="https://logos-world.net/wp-content/uploads/2021/02/New-Myntra-Logo.png" alt="logo"/>
+            </div>
+            <div>
+                <h2>MEN</h2>
+                <h2>WOMEN</h2>
+                <h2>KIDS</h2>
+                <h2>HOME & LIVING</h2>
+                <h2>BEAUTY</h2>
+                <h2>STUDIO</h2>
+                    
+                <input type="text" placeholder="   Search...">
+                <!-- <button>   <i class="fa-solid fa-magnifying-glass"></i></button> -->
+                <button><a href="./cart.html">Cart</a></button>
+                <button><a href="./products.html">Products</a></button>
+                <button onclick="logout" >Logout</button>
+            </div>
+        <div>
+            <i class="fa-regular fa-user fa-lg"></i>
+            <i class="fa-regular fa-heart fa-lg"></i>
+            <i class="fa-solid fa-bag-shopping fa-lg"></i>
+        </div>
+    </div>
+    
+
+    <div id="homeScreen">
+        <div>
+            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/7/28/6107d28b-2bcb-44e6-9743-655b54550b8f1659020199598-Workwear_Desk--1-.jpg" alt="">
+            <img src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2023/1/6/b79749b7-2502-4f32-8e1b-bf31acd0b3af1672983601527-DK-generic-with-model-copy.jpg" alt="">
+            <img src="./myntra.png" alt="Photo">
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>

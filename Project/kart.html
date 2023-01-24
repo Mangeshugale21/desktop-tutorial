@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <style>
+        #screen > div:nth-child(2){
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+        }
+        #leftNavbar{
+        width: 15%;
+        border: 1px solid purple;
+        }
+        #rightProducts{
+        width: 79%;
+        border: 1px solid green;
+        display: flex;
+        flex-direction: column;
+        }
+        #rightProducts >div {
+            width:100%;
+            display: flex;
+            border: 1px solid pink;
+            height: 270px;
+        }
+        #rightProducts >div > div { 
+            width: 13%;
+            height: 250px;
+            margin: auto;
+            border: 1px solid black;
+            
+        }
+        #rightProducts >div > div > img { 
+            width: 100%;
+            height: 180px;
+            margin: auto;
+            
+        }
+        #rightProducts >div > div > div{ 
+            
+            height: 60px;
+            width: 85%;
+            margin: auto;
+        }
+        #rightProducts >div > div > div >p { 
+            font-size: 12px;
+            margin-bottom: 1%;
+            margin-top: 0%;
+        }
+        #rightProducts >div > div > div > button { 
+            width: 100px;
+            height: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+<div id="navbar">
+    <button><a href="./cart.html">cart</a></button>
+</div>
+    <h1>Products</h1>
+    <div id="screen">
+        <div>
+            <p>Home/Footwear/Mfb Brand</p>
+            <p>Mfb Brand - 2367 items </p>
+        </div>
+        <div>
+        <div id="leftNavbar"> 
+            <p>FILTERS</p></div>
+        <div id="rightProducts">
+            <div>
+            <div >
+            <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            <div>
+            <img src="https://lmsin.net/cdn-cgi/image/h=1125,w=1125,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011944067-Blue-1000011944067_02-2100.jpg"/>
+            <div>
+                <p> Lee Coper</p>
+                <p> Mens sneakers</p>
+                <p> Rs.4000</p>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            <div>
+            <img src="data:image/png;base64,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"/>
+            <div>
+                <p> levis</p>
+                <p> Mens sneakers</p>
+                <p> Rs.1900</p>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            <div>
+            <img src="data:image/webp;base64,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"/>
+            <div>
+                <p> Mochi</p>
+                <p> Mens sneakers</p>
+                <p> Rs.2800</p>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            <div>
+            <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"/>
+            <div>
+                <p> Sparx</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            </div>
+            <div>2
+            <div>
+            <img src="data:image/png;base64,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"/>
+            <div>
+                <p> Roadster</p>
+                <p> Womens sneakers</p>
+                <p> Rs.799</p>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            <div>
+            <div>
+            <img src="data:image/webp;base64,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"/>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div>
+            </div>
+            <div><img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div></div>
+            <div>
+            <img src="data:image/jpeg;base64,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"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div></div>
+            <div>
+            <img src="https://assets.ajio.com/medias/sys_master/root/20221005/NGaH/633c9d1cf997ddfdbd0828da/el_paso_blue_high-top_slip-on_sneakers_.jpg"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div></div>
+            </div>
+            <div>3
+            <div>
+            <img src="https://assets.ajio.com/medias/sys_master/root/20210610/kqYU/60c22accf997ddb312c4c521/adorly_black_panelled_slip-on_shoes_with_contrast_outsole.jpg"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div></div>
+            <div><img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div></div>
+            <div><img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div></div>
+            <div><img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div></div>
+            <div><img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16513990/2022/1/26/d8f01fca-59e2-4f82-8214-9cd61d373be41643184909272-Roadster-Men-White-Sneakers-6661643184908868-1.jpg"/>
+            <div>
+                <p> Roadster</p>
+                <p> Mens sneakers</p>
+                <p> Rs.800</p>
+                <button>Add to cart</button>
+            </div></div>
+            </div>
+            <div>4
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            </div>
+            <div>5
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

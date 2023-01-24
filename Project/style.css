@@ -1,0 +1,23 @@
+/* -------------Register-------- */
+/* div{
+    margin-left: 40%;
+    margin-top: 50px;
+    width: 250px;
+    height: 350px;
+    border: solid black;
+    box-shadow: 10px 5px 5px rgb(105, 105, 234);
+    text-align: center;
+    background-color: rgb(215, 234, 158);
+}
+div>input{
+    margin-bottom: 10px;
+}
+div>button{
+    border-radius: 5px;
+    width: 130px;
+    height: 28px;
+    background-color: rgb(103, 240, 103);
+}
+
+-----------------Login----------------- */
+

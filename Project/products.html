@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        #screen > div:nth-child(2){
+            border: 1px solid red;
+            display: flex;
+            flex-direction: row;
+        }
+        #leftnavbar {
+            width: 19%;
+            border: 1px solid red;
+        }
+        #rightProducts {
+            width: 80%;
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+            height: 1100px;
+        }
+        #rightProducts >div {
+            width: 100%;
+            display: flex;
+            border: 1px solid yellow;
+            height: 270px;
+        }
+        #rightProducts >div >div{
+            width: 18%;
+            margin: auto;
+            border: 1px solid black;
+            height: 250px;
+        }
+        #rightProducts >div >div > img{
+            width: 100%;
+            margin: auto;
+            /* border: 1px solid black; */
+            height: 180px;
+        }
+        #rightProducts >div >div >div{
+            /* border: 1px solid blue; */
+            height: 60px;
+            width: 85%;
+            margin: auto;
+        }
+        #rightProducts >div >div >div> p{
+            font-size: 12px;
+            margin-bottom: 1px;
+            margin-top: 0;
+            font-weight: 700
+        }
+        #rightProducts >div >div >div> button{
+            border-radius: 5px;
+            width: 90px;
+            height: 18px;
+            font-size: 10px;
+        }
+
+        /* --------------LeftBarr */
+
+        #leftnavbar>p{
+            font-size: 18px;
+            /* text-align: center; */
+            margin-top: 6px;
+            margin-left: 20px;
+            font-weight: 700;
+        }
+        #leftnavbar>div{
+            margin-left: 22px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Products</h1>
+    <div id="screen">
+        <div>
+            <p>Home/Footwear/Casual Shoes</p>
+            <p>Casual Shoes- 20 items</p>
+        </div>
+        <div>
+            <div id="leftnavbar">
+            <p>FILTERS</p>
+        
+            <div>
+                <p>BRANDS</p>
+                <input type="checkbox"> Nike(03)<br>
+                <input type="checkbox"> Puma(05)<br>
+                <input type="checkbox"> Champus(04)<br>
+                <input type="checkbox"> Rodster(03)<br>
+                <input type="checkbox"> Spark(03)<br>
+                <input type="checkbox"> Adidas(02)<br>
+                <p>**********************</p>
+                </div>
+                <div>
+                    <p>PRICE</p>
+                    <input type="checkbox"> Rs.500 to Rs.1000<br>
+                    <input type="checkbox"> Rs.1000 to Rs.1500<br>
+                    <input type="checkbox"> Rs.1500 to Rs.2500<br>
+                    <input type="checkbox"> Rs.2500 to Rs.3000<br>
+                    <input type="checkbox"> Rs.3000 to Rs.3500<br>
+                    <p>**********************</p>
+                </div>
+                <div>
+                    <p>COLOR</p>
+                    <input type="checkbox"> white<br>
+                    <input type="checkbox"> Black<br>
+                    <input type="checkbox"> Gray<br>
+                    <input type="checkbox"> Blue<br>
+                    <input type="checkbox"> Red<br>
+                    <input type="checkbox"> Navy Blue<br>
+                    <input type="checkbox"> Green<br>
+                    <p>**********************</p>
+                </div>
+                <div>
+                    <p>DISCOUNT RANGE</p>
+                    <input type="checkbox"> 10% and above<br>
+                    <input type="checkbox"> 20% and above<br>
+                    <input type="checkbox"> 30% and above<br>
+                    <input type="checkbox"> 40% and above<br>
+                    <input type="checkbox"> 50% and above<br>
+                    <input type="checkbox"> 60% and above<br>
+                    <input type="checkbox"> 70% and above<br>
+                    <input type="checkbox"> 80% and above<br>
+                    <p>**********************</p>
+                </div>
+        
+            
+                
+            
+            </div>
+            <div id="rightProducts">
+            <div>
+                <div id="lineoneone">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20052936/2022/9/17/264479c2-0253-4e9d-a331-c5617c147aae1663420204621RoadsterMenGreySportsShoes1.jpg" alt="">
+                    <div>
+                        <p>Rodster</p>
+                        <p>Mens Shoes</p>
+                        <p>Rs.770</p>
+                        <button  onclick="addToCart(lineoneone)">Add to cart</button>
+                    </div>
+                </div>
+                <div id="lineonetwo">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/21081360/2022/12/5/43941293-528a-4edd-aa09-454f1339ca811670255780826RoadsterMenMeshLaceUpRunningSportsShoes1.jpg" alt="shoe">
+                    <div>
+                        <p>Rodster</p>
+                        <p>Mens Shoes</p>
+                        <p>Rs.599</p>
+                        <button onclick="addToCart(lineonetwo)">Add to cart</button>
+                    </div>
+                </div>
+                <div id="lineonethree">
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/19935180/2022/11/2/6838ee8f-c978-4221-a64c-f2fa121c08a81667392165939-Nike-Women-Blue-MC-2-Training-Shoes-761667392165487-1.jpg" alt="shoe">
+                    <div>
+                        <p>Nike</p>
+                        <p>Mens Shoes</p>
+                        <p>Rs.2825</p>
+                        <button onclick="addToCart(lineonethree)">Add to cart</button>
+                    </div>
+                </div>
+                <div id="lineonefour">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20052940/2022/9/17/9788b699-88e4-4994-9e8f-ce2bd372a4db1663420204797RoadsterMenNavyBlueSportsShoes1.jpg" alt="shoe">
+                    <div>
+                        <p>Rodster</p>
+                        <p>Mens Shoes</p>
+                        <p>Rs.820</p>
+                        <button onclick="addToCart(lineonefour)">Add to cart</button>
+                    </div>
+                </div>
+                <div id="lineonefive">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/20193102/2022/9/28/b180f5b6-ef7d-483c-9440-48f8651e82ed1664312100351RoadsterMenGreySportRunningShoes1.jpg" alt="shoe">
+                    <div>
+                        <p>Puma</p>
+                        <p>Mens Shoes</p>
+                        <p>Rs.790</p>
+                        <button onclick="addToCart(lineonefive)">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------- -->
+            <div>
+                <div id="linetwoone">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/11796514/2022/6/29/caa0c27d-c8ad-4372-b43c-8dd97d448e7b1656502449472-Campus-Men-Navy-Blue-Mesh-Running-Shoes-671656502449024-1.jpg" alt="campus">
+                <div>
+                    <p>Campus</p>
+                    <p> Running shoe</p>
+                    <p> Rs.759</p>
+                    <button onclick="addToCart(linetwoone)">Add to cart</button>
+                </div>
+                </div>
+                <div id="linetwotwo">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15027286/2022/6/30/fd5d5d6c-1c65-4813-983b-780d1370b4e71656582764170CampusMenTurquoiseBlueMeshRunningNon-MarkingShoes1.jpg" alt="Shoe">
+                <div>
+                    <p>Campus</p>
+                    <p> Running shoe</p>
+                    <p> Rs.950</p>
+                    <button onclick="addToCart(linetwotwo)">Add to cart</button>
+                </div>
+                </div>
+                <div id="linetwothree">
+                    <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/15465490/2022/7/21/f51e052e-dc84-4f1d-8aed-97371b4861881658381401685-Campus-Men-Black-Mesh-Running-Non-Marking-Shoes-751165838140-1.jpg" alt="Shoe">
+                <div>
+                    <p> Campus</p>
+                    <p> Running shoe</p>
+                    <p> Rs.1520</p>
+                    <button onclick="addToCart(linetwothree)">Add to cart</button>
+                </div>
+            </div>
+                <div id="linetwofour">
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/18043676/2022/8/4/92ddcc8a-6003-496d-bb25-fee755c549df1659630772131CampusMenWhiteMeshRunningShoes1.jpg" alt="Shoe">
+                <div>
+                    <p> Campus</p>
+                    <p> Running shoe</p>
+                    <p> Rs.1800</p>
+                    <button onclick="addToCart(linetwofour)">Add to cart</button>
+                </div></div>
+                <div id="linetwofive">
+                    <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/18800936/2022/8/11/f64f9c4f-46bb-44da-bbf2-f5d48e8307211660212582825-Nike-Men-White-VAPOR-LITE-HC-Tennis-Shoes-4911660212582741-6.jpg" alt="Shoe">
+                <div>
+                    <p> Nike</p>
+                    <p> Running shoe</p>
+                    <p> Rs.2490</p>
+                    <button onclick="addToCart(linetwofive)">Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div id="linethreeone">
+                <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16880600/2022/11/7/3fd51e2b-7d93-4f87-8268-82b7a76905c71667825217183PumaMenBlackCellFractionSoftFoamRunningShoes1.jpg" alt="Puma">
+            <div>
+                <p> Puma</p>
+                <p> Mens Shoe</p>
+                <p> Rs.1599</p>
+                <button onclick="addToCart(linethreeone)">Add to cart</button>
+            </div>
+            </div>
+            <div id="linethreetwo">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17543174/2022/6/29/fa509554-0469-4015-9961-895a67f639df1656495865514-Puma-Men-Black-Solid-Running-Shoes-1361656495865283-1.jpg" alt="">
+            <div>
+                <p> Puma</p>
+                <p> Mens  Shoe</p>
+                <p> Rs.990</p>
+                <button onclick="addToCart(linethreetwo)">Add to cart</button>
+            </div>
+            </div>
+            <div id="linethreethree">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/15154804/2022/4/27/48aeb253-82ce-4641-8f19-a0d1ac29bce11651050535378SparxMenBlackMeshRunningNon-MarkingShoes1.jpg" alt="">
+            <div>
+                <p> Spark</p>
+                <p> Mens sneakers</p>
+                <p> Rs.1600</p>
+                <button onclick="addToCart(linethreethree)">Add to cart</button>
+            </div>
+        </div>
+            <div id="linethreefour">
+                <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/16864512/2022/6/29/fabf9e61-ce02-4c56-ae8a-d7983f4a956c1656479483879-Puma-Men-Black-Troy-MU-Running-Shoes-3551656479483490-1.jpg" alt="">
+            <div>
+                <p> Puma</p>
+                <p> Mens sneakers</p>
+                <p> Rs.1800</p>
+                <button onclick="addToCart(linethreefour)">Add to cart</button>
+            </div>
+        </div>
+            <div id="linethreefive">
+                <img src="https://assets.myntassets.com/dpr_2,q_60,w_210,c_limit,fl_progressive/assets/images/17663240/2022/10/13/dac62525-653c-42ea-b640-abd86ee85f741665652860315-Puma--Men-Grey-Solid-Woven-Design-Forza-Running-Shoes-200166-1.jpg" alt="">
+            <div>
+                <p> Puma</p>
+                <p> Mens sneakers</p>
+                <p> Rs.2110</p>
+                <button onclick="addToCart(linethreefive)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div id="linefourone">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17205598/2022/8/3/c979e245-83bd-4275-b162-73435eceb8cf1659526750026-Nike-Men-Beige-Air-Zoom-Vomero-16-Road-Running-Shoes-6601659-1.jpg" alt="">
+        <div>
+            <p> Nike</p>
+            <p> Mens sneakers</p>
+            <p> Rs.3099</p>
+            <button onclick="addToCart(linefourone)">Add to cart</button>
+        </div>
+        </div>
+        <div id="linefourtwo">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/18374224/2022/10/19/65aba25e-aab6-4f9b-9eca-0d44d49a04771666176048417-ADIDAS-Men-Black-Woven-Design-Response-Super-30-Running-Shoe-1.jpg" alt="">
+        <div>
+            <p> Adidas</p>
+            <p> Mens Shoe</p>
+            <p> Rs.2100</p>
+            <button onclick="addToCart(linefourtwo)">Add to cart</button>
+        </div>
+        </div>
+        <div id="linefourthree">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/17146906/2022/8/8/1db5ff4e-5d54-4563-b5b4-d0f0b7d994061659960054178-ADIDAS-Men-Navy-Blue--White-Woven-Design-Running-Dasherr-Sho-6.jpg" alt="">
+        <div>
+            <p> Adidas</p>
+            <p> Mens sneakers</p>
+            <p> Rs.2800</p>
+            <button onclick="addToCart(linefourthree)">Add to cart</button>
+        </div>
+    </div>
+        <div id="linefourfour">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14962324/2022/7/1/f77c75a9-60e6-42aa-a02d-0e3df93652bb1656673657025-Sparx-Men-White-Solid-Round-Toe-Running-Shoes-26916566736566-1.jpg" alt="">
+        <div>
+            <p> Spark</p>
+            <p> Mens Shoe</p>
+            <p> Rs.1500</p>
+            <button onclick="addToCart(linefourfour)">Add to cart</button>
+        </div>
+    </div>
+        <div id="linefourfive">
+            <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/14739124/2022/9/12/3b8c483d-755e-4da1-a133-3a606dc270151662981794002-Sparx-Men-Black-Mesh-Running-Non-Marking-Shoes-3381662981793-1.jpg" alt="">
+        <div>
+            <p> Spark</p>
+            <p> Mens sneakers</p>
+            <p> Rs.1430</p>
+            <button onclick="addToCart(linefourfive)">Add to cart</button>
+        </div>
+    </div>
+</div>
+
+
+
+
+                
+                <!-- -------------ndkn -->
+            </div> 
+        <!-- </div> -->
+    <!-- </div>  -->
+
+    <script src="./server.js"></script>
+</body>
+</html>

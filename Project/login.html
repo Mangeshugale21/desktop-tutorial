@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<style>
+           div{
+    margin: auto;
+    margin-top: 50px;
+    width: 490px;
+    height: 590px;
+    border: solid black;
+    box-shadow: 10px 5px 5px rgb(234, 111, 73);
+    text-align: center;
+    background-color: rgb(208, 214, 189);
+}
+div>input{
+    margin-bottom: 18px;
+}
+div>button{
+    border-radius: 5px;
+    width: 170px;
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: rgb(35, 176, 207);
+}
+div>input{
+    width: 250px;
+    height: 25px;
+    border-radius: 4px;
+}
+</style>
+</head>
+<body>
+    <div style="margin-left: 40%;">
+        <h1>Login</h1>
+        <input type="email" id="email" placeholder="Enter your mail id.."/> <br />
+        <input type="password" id="password" placeholder="Enter your Password.."/> <br />
+        <button onclick="login()">Login</button><br>
+        <button style="margin-top: 7px;"> <a href="./register.html">Register</a> </button>
+
+
+        <script src="./server.js"></script>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <!-- <link rel="stylesheet" href="style.css">-->
+    <style>
+        div{
+    margin: auto;
+    margin-top: 50px;
+    width: 490px;
+    height: 590px;
+    border: solid black;
+    box-shadow: 10px 5px 5px rgb(105, 105, 234);
+    text-align: center;
+    background-color: rgb(215, 234, 158);
+}
+div>input{
+    margin-bottom: 18px;
+}
+div>button{
+    border-radius: 5px;
+    width: 170px;
+    height: 35px;
+    margin-bottom: 10px;
+    background-color: rgb(103, 240, 103);
+}
+div>input{
+    width: 250px;
+    height: 25px;
+    border-radius: 4px;
+}
+div>p{
+    margin-left: -250px;
+}
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Register</h1>
+        <input type="text" id="name" placeholder="Enter your Name"required/> <br>
+        <input type="email" id="email" placeholder="Enter your Email"required/> <br>
+        <input type="password" id="password" placeholder="Enter your Password"required/> <br>
+        <button onclick="register()">Register</button> <br>
+        <button style="margin-top: 7px;"> <a href="./login.html">Login</a> </button>
+        <p>Forget Password ?</p>
+        
+        <script src="./server.js"></script>
+    </div>
+    
+</body>
+</html>

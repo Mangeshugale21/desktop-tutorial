@@ -1,0 +1,83 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <style>
+        #screen>div{
+            width: 60%;
+            margin: auto;
+            border: 1px solid green;
+            height: 500px;
+            display: flex;
+        }
+        #screen > div > div:nth-child(1){
+            width: 70%;
+            border: 1px solid rgb(242, 7, 7);
+            height: 500px;
+        }
+        
+        #screen > div > div:nth-child(2){
+            width: 30%;
+            border: 1px solid blue;
+            height: 300px;
+        }
+
+        
+    </style>
+    <script>
+        window.onload = function(){
+            var isLoggedIn = JSON.parse(localStorage.getItem("isUserLoggedIn"));
+            console.log(isLoggedIn);
+            if(isLoggedIn == true) {
+                alert("Welcome Home !")
+                const allProducts = JSON.parse(localStorage.getItem("allProducts"));
+                var leftCart = document.getElementById("leftCart");
+                // console.log(allProducts[1],"allProducts")
+                for(var i = 0; i < allProducts.length; i++){
+                    console.log(allProducts[i],"allProducts")
+
+                    const innerDiv = document.createElement("div");
+                    innerDiv.style.display = "flex";
+                    var leftDiv = document.createElement("div");
+                    var img = document.createElement("img");
+                    img.src = allProducts[i].pI;
+                    img.style.width ="80px";
+                    img.style.height ="80px";
+                    leftDiv.append(img);
+
+                    var rightDiv = document.createElement("div")
+                    var name = document.createElement("h4");
+                    name.innerText = allProducts[i].pN;
+                    rightDiv.append(name);
+                    var price = document.createElement("p");
+                    price.innerText = allProducts[i].pP;
+                    rightDiv.append(price);
+                    innerDiv.append(leftDiv)
+                    innerDiv.append(rightDiv)
+                    
+                    leftCart.append(innerDiv);
+                }
+            }
+            else{
+                alert("Login First !")
+                window.location.href='./login.html';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Cart</h1>
+    <div id="screen">
+        <div>
+            <div id="leftCart"> 
+        </div>
+        <div></div>
+        </div>
+
+    </div>
+    <script src="./server.js"></script>
+</body>
+</html>
